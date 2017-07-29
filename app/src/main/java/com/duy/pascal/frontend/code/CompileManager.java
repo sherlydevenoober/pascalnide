@@ -21,6 +21,7 @@ import android.content.Intent;
 
 import com.duy.pascal.frontend.debug.activities.DebugActivity;
 import com.duy.pascal.frontend.editor.EditorActivity;
+import com.duy.pascal.frontend.emulator.emulatorActivity;
 import com.duy.pascal.frontend.runnable.ExecuteActivity;
 
 /**
@@ -40,10 +41,12 @@ public class CompileManager {
         this.mActivity = activity;
     }
 
-    public static void execute(Activity activity, String name) {
+    public static void execute(Activity activity, String name,boolean closeOldActivity) {
         Intent intent = new Intent(activity, ExecuteActivity.class);
         intent.putExtra(FILE_PATH, name);
-        activity.finish();
+        if (closeOldActivity) {
+            activity.finish();
+        }
         activity.startActivity(intent);
     }
 
@@ -53,6 +56,11 @@ public class CompileManager {
         mActivity.startActivity(intent);
     }
 
+    public void emulator() {
+        Intent intent = new Intent(mActivity, emulatorActivity.class);
+        //intent.putExtra(FILE_PATH, name);
+        mActivity.startActivity(intent);
+    }
     // Execute compiled file
     public void execute(String name) {
         Intent intent = new Intent(mActivity, ExecuteActivity.class);
