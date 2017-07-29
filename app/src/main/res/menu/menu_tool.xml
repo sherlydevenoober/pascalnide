@@ -100,6 +100,11 @@
         android:title="@string/debug"
         app:showAsAction="ifRoom" />
     <item
+        android:id="@+id/action_emulator"
+        android:icon="@drawable/ic_computer_white_24dp"
+        android:title="@string/linkPC"
+        app:showAsAction="ifRoom" />
+    <item
         android:icon="@drawable/ic_build_white_24dp"
         android:title="@string/tool"
         app:showAsAction="ifRoom">
