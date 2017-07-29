@@ -209,6 +209,8 @@ public class MenuEditor {
                 activity.startDebug();
 
                 break;
+            case R.id.action_emulator:
+                activity.startEmulator();
             case R.id.action_show_line:
                 pascalPreferences.setShowLines(menuItem.isChecked());
 
