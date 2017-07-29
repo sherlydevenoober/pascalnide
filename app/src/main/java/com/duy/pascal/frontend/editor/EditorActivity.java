@@ -732,6 +732,9 @@ public class EditorActivity extends BaseEditorActivity implements
     public void startDebug() {
         if (doCompile()) mCompileManager.debug(getCurrentFilePath());
     }
+    public void startEmulator() {
+        mCompileManager.emulator();
+    }
 
     public void insertColor() {
         ColorPickerDialogBuilder.with(this).
