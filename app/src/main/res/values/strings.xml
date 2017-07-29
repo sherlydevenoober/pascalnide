@@ -228,6 +228,21 @@
         Once you bought the donation app you have to restart Pascal NIDE in order to enable all features.</string>
     <string name="donate_nope">I won\'t fall for this scam!</string>
     <string name="donate_yes">I love this app. Must donate!</string>
+    <!-- Connection-->
+    <string name="linkPC" translatable="false">Link to PascalN-Android</string>
+    <string name="con_timeout" translatable="false">Connection has timed out!</string>
+    <string name="con_success" translatable="false">Connection was succesful!</string>
+    <string name="con_port" translatable="false">port</string>
+    <string name="con_waitcon" translatable="false">Waiting for connection</string>
+    <string name="con_waitcmd" translatable="false">Waiting for command</string>
+    <string name="con_waitfile" translatable="false">Waiting for file</string>
+    <string name="con_compile" translatable="false">Ready execute file</string>
+    <string name="con_debug" translatable="false">Ready debug file</string>
+    <string name="con_cmdexec" translatable="false">[EXECUTE]</string>
+    <string name="con_sendbysock" translatable="false">      Something went wrong!      \nTrying send data throught Socket!</string>
+    <string name="con_sendbyadb" translatable="false">Trying send data throught ADB!!</string>
+    <string name="con_crashed" translatable="false">Something crashed!!\nPlease try again!</string>
+
 
     <!--Splash screen-->
     <string name="more_font">Get more font</string>
